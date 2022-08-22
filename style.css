@@ -272,6 +272,10 @@ footer img {
     margin: 1%;
     width: 40%;
 }
+header ul a:hover{
+    text-decoration: underline;
+    transition: 03s;
+}
 
 @media (max-width: 840px){
 .form-index{
