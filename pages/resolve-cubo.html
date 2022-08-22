@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,300&family=Zilla+Slab:ital,wght@0,300;0,400;0,600;1,400;1,700&display=swap')"
+        rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../images/logo.png">
+    <title>MundoRubik</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"><img src="../images/logo.png" alt="logo MundoRubik" class="logo"></a>
+        <form action="#" method="get">
+            <input type="search" placeholder="Encontra tu cubo" name="search">
+            <input type="submit" value="Buscar" name="search" class="search">
+        </form>
+        <nav>
+            <ul>
+                <li> <a href="../index.html">Inicio</a></li>
+                <li> <a href="tienda.html">Tienda</a></li>
+                <li><a href="records.html">Records Mundiales</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="resolve-cubo.html">Resolve el cubo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <br>
+        <h1>RESOLVIENDO EL CUBO</h1>
+        <br>
+        <h2>Notación para el cubo de rubik</h2> <br>
+        <section><p>Cuando te encuentres la letra normal (U) quiere decir que el giro se deberá hacer en sentido de
+                las agujas del reloj y cuando la letra lleve un apóstrofe (U’) el giro será antihorario. Podemos
+                encontrarnos con las
+                siguientes:</p>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/17%20(1).png" alt="Cubo notación"></div>
+            <section>
+                <ul">
+                    <li>U (Up): Capa Superior</li>
+                    <li>D (Down): Capa Inferior</li>
+                    <li>R (Right): Capa Derecha</li>
+                    <li>L (Left): Capa Izquierda</li>
+                    <li>F (Front): Capa Frontal</li>
+                    <li>B (Back): Capa Trasera</li>
+                    </ul>
+            </section> <br><br><br>
+            <h2>Cómo hacer la primera cara del cubo de rubik</h2> <br>
+            <p>Lo primero que tenemos que hacer es una cruz blanca, teniendo en cuenta que
+                tendremos que respetar el color de los centros adyacentes.Este paso no requiere ningún algoritmo
+                específico,es algo intuitivo
+                que solo necesita un poco de práctica para entender cómo se mueven las diferentes piezas por el
+                cubo.</p> <br><br>
+            <h2>Resolución de la capa central</h2> <br>
+            <p>Como ya hemos terminado la primera capa la ponemos mirando hacia abajo. En este
+                punto la cosa se
+                complica un poco, pero con práctica te resultará más fácil.
+                Para este caso tenemos que aprender dos sencillos algoritmos. Para llevarlos a cabo,buscaremos una
+                arista que no tenga el color amarillo  y la ponemos de forma que el color de la arista coincida con
+                el color del
+                centro.</p>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/42-1.png" alt="resolución capa central1"></div>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/41-2.png" alt="resolución capa central2"></div>
+            <h2>Cómo hacer la última cara del cubo de rubik</h2> <br>
+            <h3>Hacer la última cruz</h3> <br>
+            <p>En este paso vamos a hacer una cruz en la cara amarilla pero no te preocupes si
+                los colores laterales
+                no coinciden con
+                los colores del centro de la cara, eso lo arreglaremos en el próximo paso. Nos podemos encontrar
+                con
+                cuatro casos y todos
+                ellos los vamos a solucionar con el mismo algoritmo.</p> <br><br>
+            <ol>
+                <li>Lo primero que nos puede pasar es que la cruz ya la tengamos hecha. En este caso no hace falta que
+                    hagas nada, continua con el siguiente paso.</li>
+                <li>En esta ocasión tendremos una línea de color amarillo. Para hacer la cruz amarilla desde aquí,
+                    pondremos la línea amarilla de forma horizontal a nosotros y aplicaremos el algoritmo una sola
+                    vez.</li>
+                <li>Reconoceremos el tercer caso porque veremos una L amarilla. Para solucionar este caso cogeremos el
+                    cubo de forma que las aristas amarillas se queden en el fondo y en la izquierda. Una vez que lo
+                    tengamos así, aplicaremos el mismo algoritmo dos veces.</li>
+                <li>Último caso: "el Punto". lo que haremos es realizar una vez el mismo algoritmo que en los casos
+                    anteriores; después dos giros a la capa superior y volvemos a repetir otras dos veces el
+                    algoritmo.
+                </li>
+            </ol>
+            <div ><img src="https://kubekings.com/img/cms/tutorial-3x3/54.png"
+                    alt="resolución capa final1" ></div>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/53-1.png"
+                    alt="resolución capa final2" ></div>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/52-1.png"
+                    alt="resolución capa final3" ></div>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/51-2.png"
+                    alt="resolución capa final4" ></div>
+            <h3>Ordenar las aristas de la última cruz</h3> <br>
+            <p>Cuando hemos hecho la cruz amarilla, hemos comentado que no nos teníamos que
+                preocupar si los colores de los laterales no coinciden con
+                los centros, pues eso lo vamos a solucionar ahora. <br><br>Tendremos dos casos:</p><br><br>
+            <ol>
+                <li>Buscaremos que dos aristas adyacentes estén bien colocadas, es decir, que sus colores laterales
+                    coincidan con los colores de los centros.
+                    Cuando las encontremos, tenemos que dejarlas a nuestra izquierda, de forma que las aristas que están
+                    bien se queden en el fondo y en la
+                    izquierda. Una vez que las tenemos así, aplicamos el siguiente algoritmo.</li>
+                <li>En el segundo caso encontramos dos aristas bien, pero en esta ocasión están una frente a la otra.
+                    Cuando nos pase esto, aplicamos el
+                    algoritmo una vez para que nos salga el caso anterior y repetiremos el caso 1.</li>
+            </ol> <br> <br>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/61.jpg" alt="resolución aristas1"
+                    ></div>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/62.jpg" alt="resolución aristas2"></div> <br><br><br>
+            <h2>Cómo ordenar las esquinas de la última capa</h2> <br>
+            <p>Ya solo nos queda poner las esquinas en su posición y orientarlas. Ahora
+                tendremos la cruz amarilla
+                bien, eso quiere decir que el
+                color de los laterales de la cruz coincidirá con el de los centros. Ahora tenemos dos posibles
+                casos.</p> <br><br>
+            <ol>
+                <li>En el primer caso, sin mover ninguna cara, buscaremos alguna esquina que esté bien, aunque esté
+                    rotada.
+                    Cuando la encontremos, pondremos el cubo de forma que la esquina que esté bien se quede a
+                    nuestra
+                    derecha
+                    y aplicamos el algoritmo que ves en la ilustración. Lo tendremos que aplicar una o dos veces, es
+                    decir, lo una vez
+                    y volver a mirar el cubo, si ya están todas las esquinas en su posición pasamos al siguiente
+                    paso;  en el caso de que aún esté mal lo haremos otra vez y si lo hemos hecho bien ya tendremos todas las esquinas en
+                    su posición.</li>
+                <li>En el caso de que ninguna esquina esté en su posición correcta, aplicaremos el algoritmo una vez. De
+                    esta forma,<br>
+                    alguna de las esquinas se quedará en su posición correcta y podremos proceder como hemos explicado
+                    en el paso 1.</li>
+            </ol>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/71.png" alt="resolución final1"
+                ></div>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/72.png" alt="resolución final2"
+                    ></div>
+            <h2>Orientar las esquinas</h2>
+            <p >Con una esquina que esté mal a tu derecha y aplica el algoritmo de la siguiente
+                ilustración hasta que el color amarillo
+                se quede mirando hacia arriba. Cuando esa pieza esté bien, gira la capa superior para poner a tu
+                derecha otra esquina que
+                esté mal y vuelve a aplicar el algoritmo  hasta que el amarillo se quede mirando hacia arriba. Es
+                muy importante no rotar
+                el cubo durante este proceso. Cuando estés orientando las esquinas parecerá, que estás desmontando
+                el resto del cubo,
+                pero no te preocupes, cuando termines de orientar <br> las esquinas el cubo se quedará totalmente
+                resuelto.</p> <br>
+            <div><img src="https://kubekings.com/img/cms/tutorial-3x3/73.png" alt="rotacionfinal"
+                    ></div> <br><br>
+            <p >Si tienes un Rubik 3x3 y no gira bien puedes pasarte por nuestra tienda, en la
+                categoría de cubos de rubik 3x3 tenemos
+                más de 90 modelos diferentes; desde cubos baratos que giran muy bien, hasta los cubos profesionales más
+                caros con los que
+                se ha conseguido del récord el mundo.</p>
+        </section>
+    </main>
+    <br><br><br>
+</body>
+
+<footer>
+    <div class="medios"> <img src="../images/medios-de-pago footer.jpg" alt="medios-de-pago" /> </div>
+    <br>
+    <span>Copyright © 2022 MUNDORUBIK All rights reserved.</span>
+</footer>
+</body>
