@@ -278,18 +278,13 @@ header ul a:hover{
     transition: 03s;
 }
 @keyframes logo {
-    30% {
+    30% 100% {
         transform: rotate(0);
         transform-origin: 100% 100%;
     }
 
     60% {
         transform: rotate(90deg);
-        transform-origin: 100% 100%;
-    }
-
-    100% {
-        transform: rotate(0);
         transform-origin: 100% 100%;
     }
 }
