@@ -27,6 +27,7 @@ main {
     background-color: #02456b;
     position: relative;
     left: 45%;
+    animation: logo 2s both;
 }
 
 header ul li a {
@@ -275,6 +276,22 @@ footer img {
 header ul a:hover{
     text-decoration: underline;
     transition: 03s;
+}
+@keyframes logo {
+    30% {
+        transform: rotate(0);
+        transform-origin: 100% 100%;
+    }
+
+    60% {
+        transform: rotate(90deg);
+        transform-origin: 100% 100%;
+    }
+
+    100% {
+        transform: rotate(0);
+        transform-origin: 100% 100%;
+    }
 }
 
 @media (max-width: 840px){
