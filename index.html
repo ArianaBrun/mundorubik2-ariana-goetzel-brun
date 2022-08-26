@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <title>MundoRubik2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,300&family=Zilla+Slab:ital,wght@0,300;0,400;0,600;1,400;1,700&display=swap')"
         rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="./images/logo.png">
-    <title>MundoRubik2</title>
 </head>
 
 <body>
@@ -34,58 +36,80 @@
     <main>
         <img src="./images/banner.jpg" alt="banner Cubo Rubik" class="banner">
         <h1>BIENVENIDO A MUNDORUBIK</h1>
-        <section class="section-index">
+        <section>
             <h3 class="textvideo">¡Mirá el Record Mundial!</h3> <br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ecXEtuKxx4c"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen class="videorecord"></iframe>
             <h3 class="text-envios">¡Envios gratis a partir de $5.000!</h3>
-            <section class="aside-index">
+            <section>
                 <h2>¡Suscribete para recibir novedades!</h2> <br>
 
-                <section class="grid-index">
-                    <section class="form">
-                        <form action="#" class="form-index"> <br>
-                            <span>Nombre y Apellido</span>
-                            <input type="text" name="Nom-ap" class="input-css-index">
-                            <label for="Nom-ap"></label>
-                            <br> <br>
-                            <span>Correo Electrónico</span>
-                            <input type="text" name="mail" class="input-css-index"> <br> <br>
-                            <label for="mail"></label>
-                            <span>Mis intereses son...</span> <br>
-                            <span>Ofertas</span>
-                            <input type="radio" name="ofertas" value="Ofertas"> <br> <br>
-                            <label for="Ofertas"></label>
-                            <span>Novedades</span>
-                            <input type="radio" name="Noticias" value="Noticias"> <br> <br>
-                            <label for="Noticias"></label>
-                            <span>¿Acepta términos generales y políticas de privacidad?</span>
-                            <label for="Si"></label>
-                            <input type="checkbox" name="Si" value="1"> <br><br>
-                            <span>¿Desea Suscribirse?</span> <br> <br>
-                            <input type="submit" name="Suscribirse" value="Suscribirse" class="input-form-index">
-                        </form>
-                    </section>
-                    <section class="tienda">
-                        <div>
-                            <div class="cubo1-index">
-                                <img src="./images/tienda1.webp" alt="QiYi OS Cube 3x3" class="tienda-index">
-                                <h3 class="text-tienda-index">QiYi OS Cube 3x3 </h3>
-                                <div><span class="precio-index">$ 2.500</span></div>
-                                <div><button class="button-index">Comprar</button></div>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col">
+                                <form action="#">
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nombre y Apellido</label>
+                                        <input type="text" name="Nom-ap" class="form-control input-css-index" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                        <input type="email" name="mail" class="form-control input-css-index" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault" checked name="Si" value="1">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Novedades y
+                                            noticias</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckChecked" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Nuevas
+                                            ofertas</label>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">¿Acepta términos generales y
+                                            políticas de privacidad?</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" name="Suscribirse"
+                                        value="Suscribirse">Suscribirse</button>
+                                </form>
+
                             </div>
-                            <div class="cubo1-index">
-                                <img src="./images/tienda2.webp" alt="QiYi Axis 3x3" class="tienda-index">
-                                <div>
-                                    <h3 class="text-tienda-index">QiYi Axis 3x3 </h3>
-                                </div>
-                                <div><span class="precio-index">$ 3.500</span></div>
-                                <div><button class="button-index" name="Comprar">Comprar</button></div>
+                            <div class="col-lg-8 col">
+                                <section class="tienda">
+                                    <div>
+                                        <div class="card cubo1-index" style="width: 18rem;">
+                                            <img src="./images/tienda1.webp" class="card-img-top tienda-index"
+                                                alt="QiYi OS Cube 3x3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">QiYi OS Cube 3x3</h5>
+                                                <p class="card-text">$ 2.500</p>
+                                                <a href="./pages/tienda.html" class="btn btn-primary">Comprar</a>
+                                            </div>
+                                        </div>
+                                        <div class="card cubo1-index" style="width: 18rem;">
+                                            <img src="./images/tienda2.webp" class="card-img-top tienda-index"
+                                                alt="QiYi Axis 3x3">
+                                            <div class="card-body">
+                                                <h5 class="card-title">QiYi Axis 3x3</h5>
+                                                <p class="card-text">$ 3.500</p>
+                                                <a href="./pages/tienda.html" class="btn btn-primary">Comprar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
                             </div>
                         </div>
-                    </section>
+                    </div>
+
                 </section>
 
                 <br>
@@ -97,6 +121,9 @@
         <br>
         <span>Copyright © 2022 MUNDORUBIK All rights reserved.</span>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
