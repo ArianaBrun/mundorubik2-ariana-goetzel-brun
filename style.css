@@ -139,6 +139,7 @@ textarea {
     padding: 30px;
     border: #02456b 6px double;
     font-family: 'Roboto', sans-serif;
+    left: 30%;
 
 }
 .search {
@@ -307,7 +308,9 @@ header ul a:hover {
     .precio-index {
         font-size: 16px;
     }
-
+    .videorecord{
+        max-width: 100%;
+    }
     .text-envios {
         width: 200px;
         margin: 40px 40px 40px 70px;
@@ -328,7 +331,9 @@ header ul a:hover {
         height: 30px;
         width: 70%;
     }
-
+    .row-index{
+        flex-direction: column;
+    }
     h3 {
         font-size: 16px;
     }
@@ -345,10 +350,12 @@ header ul a:hover {
     .text-envios {
         display: none;
     }
-
-    .videorecord {
-        width: 65%;
-        height: 45%;
+    .row-index{
+        flex-direction: column;
+        align-items: center;
+    }
+    .videorecord{
+        max-width: 100%;
     }
 
     footer span {
