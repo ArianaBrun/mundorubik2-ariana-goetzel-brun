@@ -85,12 +85,23 @@ h1 {
     font-weight: bolder;
 }
 
+.form-index {
+    border: #02456b 6px double;
+    width: 250px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
 h3,
 .span-form-contacto {
     font-family: 'Zilla Slab', serif;
     font-size: 18px;
 }
-
+h4{
+    font-size: 22px;
+    font-family: 'Zilla Slab', serif;
+}
 h3 {
     margin: 3%;
 }
@@ -110,14 +121,6 @@ textarea {
     width: 40%;
 }
 
-.form-index {
-    width: 250px;
-    margin: 0px 0px 0px 70x;
-    padding: 30px;
-    border: #02456b 6px double;
-    display: flex;
-    flex-direction: column;
-}
 
 
 .input-form-index {
@@ -132,32 +135,20 @@ textarea {
 }
 
 .text-envios {
-    display: inline-block;
-    position: relative;
     width: 250px;
-    margin: 40px 40px 40px 70px;
     padding: 30px;
     border: #02456b 6px double;
     font-family: 'Roboto', sans-serif;
 
 }
-
-.textvideo {
-    font-family: 'Roboto', sans-serif;
-}
-
 .search {
     margin: 0% 8% 0% 2%;
     width: 6%;
     height: 8%;
 }
-
-
-.videorecord {
-    position: relative;
-    left: 30%;
+.row-index{
+    align-items: center;
 }
-
 .banner {
     width: 100%;
 }
@@ -206,7 +197,7 @@ h2 {
 
 .tienda {
     grid-column: 2;
-
+    align-items: center;
 }
 
 table {
@@ -219,7 +210,7 @@ table {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 2%;
+    margin: 4%;
     border: #02456b solid 2px;
     padding: 1%;
     border-radius: 15%;
@@ -243,10 +234,11 @@ table {
     color: black;
     border-color: #02456b;
 }
+
 .btn-primary:hover {
-        color: white;
-        border-color: #02456b;
-        background-color: #02456b;
+    color: white;
+    border-color: #02456b;
+    background-color: #02456b;
 }
 
 
@@ -377,6 +369,9 @@ header ul a:hover {
         font-size: 10px;
         display: flex;
         align-items: center;
+        flex-direction: column;
+    }
+    .row-index{
         flex-direction: column;
     }
 
