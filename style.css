@@ -263,9 +263,11 @@ table {
     width: 30%;
 }
 
-footer span,
 .medios {
     text-align: center;
+}
+footer span{
+    margin-left: 35%;
 }
 
 footer span {
