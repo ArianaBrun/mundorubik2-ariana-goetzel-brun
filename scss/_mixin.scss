@@ -1,0 +1,7 @@
+@mixin title ($font-size){
+   font-family: $zilla;
+   font-size: $font-size;
+   font-style: oblique;
+   font-weight: bolder;
+   text-align: left;
+}

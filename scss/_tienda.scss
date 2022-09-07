@@ -1,0 +1,31 @@
+.btn-primary {
+    background-color: $color-medio;
+    color: black;
+    border-color: $color-oscuro;
+
+    &:hover {
+        color: white;
+        border-color: $color-oscuro;
+        background-color: $color-oscuro;
+    }
+}
+
+.tienda-index {
+    width: 70%;
+    margin: 5%;
+    border-radius: 7%;
+}
+
+.cubo1-index {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4%;
+    border: #02456b solid 2px;
+    padding: 1%;
+    border-radius: 15%;
+    background-color: #d5f1f5;
+}
+h4 {
+    @extend %font-style;
+}

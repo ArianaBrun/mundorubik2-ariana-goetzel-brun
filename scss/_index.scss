@@ -1,0 +1,63 @@
+main {
+    h1 {
+        @include title (36px);
+        padding: 3%;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+
+    .row-index {
+        align-items: center;
+    }
+
+    .text-envios {
+        width: 250px;
+        padding: 30px;
+        @extend %border6px;
+        font-family: $roboto;
+        left: 30%;
+
+    }
+
+    .videorecord {
+        max-width: 100%;
+    }
+
+    .input-css-index {
+        background-color: $color-medio;
+        @extend %border2px;
+    }
+
+    .form-index {
+        @extend %border6px;
+        width: 400px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tienda {
+        grid-column: 2;
+        align-items: center;
+
+        .cubo1-index {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 4%;
+            @extend %border2px;
+            padding: 1%;
+            border-radius: 15%;
+            background-color: $color-medio;
+        }
+
+        .tienda-index {
+            width: 70%;
+            margin: 5%;
+            border-radius: 7%;
+        }
+    }
+}

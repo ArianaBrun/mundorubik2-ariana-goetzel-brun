@@ -1,0 +1,24 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: #b1e9f1;
+}
+
+@import './variables';
+@import './extend';
+@import './mixin';
+@import './header-footer';
+@import './index';
+@import './keyframes';
+@import './tienda';
+@import './records';
+@import './historia';
+@import './resolve-cubo';
+@import './contacto';
+@import './media';

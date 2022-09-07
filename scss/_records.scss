@@ -1,0 +1,14 @@
+.vidkid {
+    position: relative;
+    left: 15%;
+    max-width: 70%;
+}
+
+.text-records {
+  @extend %marg-5
+}
+
+p {
+    text-align: justify;
+    margin-left: 3%;
+}
