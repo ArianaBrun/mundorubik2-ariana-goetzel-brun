@@ -37,7 +37,7 @@ header {
   header .navbar {
     padding-left: 15%; }
   header .navbar-toggler {
-    background-color: #b1e9f1; }
+    background-color: #c0edf4; }
   header ul {
     display: flex;
     justify-content: space-evenly;
@@ -45,7 +45,7 @@ header {
     margin: 1%; }
   header li a {
     text-decoration: none;
-    color: #b1e9f1 !important;
+    color: #c0edf4 !important;
     font-family: "Zilla Slab", serif;
     letter-spacing: 2px;
     font-style: italic;
@@ -67,7 +67,7 @@ header {
 
 footer span {
   margin-left: 35%;
-  color: #b1e9f1;
+  color: #c0edf4;
   text-align: center; }
 
 footer img {
@@ -115,7 +115,7 @@ main .tienda {
     margin-left: 30%;
     padding: 1%;
     border-radius: 15%;
-    background-color: #b1e9f1; }
+    background-color: #c0edf4; }
   main .tienda .tienda-index {
     width: 70%;
     margin: 5%;
@@ -130,7 +130,7 @@ main .tienda {
     transform-origin: 100% 100%; } }
 
 .btn-primary {
-  background-color: #b1e9f1;
+  background-color: #c0edf4;
   color: black;
   border-color: #02456b; }
   .btn-primary:hover {
@@ -196,7 +196,7 @@ main form {
     font-size: 13px;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
-    background-color: #b1e9f1;
+    background-color: #c0edf4;
     border: none;
     border-radius: 5%; }
 
@@ -222,8 +222,8 @@ main h3 {
     border: #02456b 4px double; }
   header .logo {
     width: 7%; }
-  header li a {
-    font-size: 14px; }
+  header .nav-link {
+    font-size: 18px; }
   header form input {
     font-size: 10px; }
   .text-tienda-index,
