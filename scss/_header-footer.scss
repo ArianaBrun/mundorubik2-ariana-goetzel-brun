@@ -15,7 +15,9 @@ header {
         padding-left: 15%;
 
     }
-
+    .container-fluid{
+        justify-content: flex-end !important;
+    }
     .navbar-toggler {
         background-color: $color-medio;
     }

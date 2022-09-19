@@ -36,6 +36,8 @@ header {
   z-index: 1; }
   header .navbar {
     padding-left: 15%; }
+  header .container-fluid {
+    justify-content: flex-end !important; }
   header .navbar-toggler {
     background-color: #c0edf4; }
   header ul {
