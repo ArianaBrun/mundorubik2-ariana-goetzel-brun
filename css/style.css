@@ -6,12 +6,7 @@
   font-family: 'Roboto', sans-serif; }
 
 main {
-  background-color: #b1e9f1; }
-
-.text-records, .main-resolucion p,
-.main-resolucion li {
-  margin-left: 5%;
-  margin-right: 5%; }
+  background-color: #c1f1fa; }
 
 main .text-envios, main .form-index {
   border: #02456b 6px double; }
@@ -19,9 +14,18 @@ main .text-envios, main .form-index {
 main .input-css-index, main .tienda .cubo1-index, main .img-contacto {
   border: #02456b solid 2px; }
 
-h4, main h3 {
+h4 {
   font-size: 22px;
   font-family: "Zilla Slab", serif; }
+
+.text-records, .subtitle-historia, .main-resolucion p, .main-resolucion li, main h3 {
+  margin-left: 20%;
+  margin-right: 20%; }
+
+.text-records, .main-resolucion p, .main-resolucion li {
+  padding: 2%;
+  background-color: aliceblue;
+  border-radius: 4%; }
 
 header,
 footer {
@@ -34,12 +38,12 @@ header {
   position: sticky;
   top: 0%;
   z-index: 1; }
-  header .navbar {
-    padding-left: 15%; }
   header .container-fluid {
     justify-content: flex-end !important; }
+    header .container-fluid .navbar-collapse {
+      transition: height 0.7s linear; }
   header .navbar-toggler {
-    background-color: #c0edf4; }
+    background-color: #d7f2f6; }
   header ul {
     display: flex;
     justify-content: space-evenly;
@@ -47,7 +51,7 @@ header {
     margin: 1%; }
   header li a {
     text-decoration: none;
-    color: #c0edf4 !important;
+    color: #d7f2f6 !important;
     font-family: "Zilla Slab", serif;
     letter-spacing: 2px;
     font-style: italic;
@@ -69,12 +73,11 @@ header {
 
 footer span {
   margin-left: 35%;
-  color: #c0edf4;
+  color: #d7f2f6;
   text-align: center; }
 
 footer img {
-  margin: 1%;
-  width: 40%; }
+  margin: 1%; }
 
 footer .medios {
   text-align: center; }
@@ -94,17 +97,26 @@ main .row-index {
   align-items: center; }
 
 main .text-envios {
+  margin: 3% 0% 3% 0%;
   padding: 30px;
   font-family: "Roboto", sans-serif;
-  left: 30%; }
+  width: 100%; }
+  main .text-envios:hover {
+    box-shadow: 0 5px 150px #02456b; }
 
 main .videorecord {
   max-width: 100%; }
+  main .videorecord:hover {
+    box-shadow: 0 5px 15px #02456b; }
 
 main .form-index {
   padding: 30px;
   display: flex;
   flex-direction: column; }
+  main .form-index .index-form-h2 {
+    margin: 0% 0% 6% 0%; }
+  main .form-index .form-check-input:hover {
+    border: 0.7mm #02456b solid; }
 
 main .tienda {
   grid-column: 2;
@@ -114,30 +126,36 @@ main .tienda {
     align-items: center;
     flex-direction: column;
     margin: 4%;
-    margin-left: 30%;
     padding: 1%;
     border-radius: 15%;
-    background-color: #c0edf4; }
+    background-color: #d7f2f6; }
+    main .tienda .cubo1-index:hover {
+      color: #d7f2f6;
+      box-shadow: 0 5px 15px #02456b;
+      background-color: #02456b; }
   main .tienda .tienda-index {
     width: 70%;
     margin: 5%;
     border-radius: 7%; }
 
 @keyframes logo {
-  30% 100% {
+  30% {
     transform: rotate(0);
     transform-origin: 100% 100%; }
   60% {
     transform: rotate(90deg);
+    transform-origin: 100% 100%; }
+  100% {
+    transform: rotate(0);
     transform-origin: 100% 100%; } }
 
 .btn-primary {
-  background-color: #c0edf4;
+  background-color: #d7f2f6;
   color: black;
   border-color: #02456b; }
   .btn-primary:hover {
     color: white;
-    border-color: #02456b;
+    border-color: #d7f2f6;
     background-color: #02456b; }
 
 .tienda-index {
@@ -154,14 +172,18 @@ main .tienda {
   padding: 1%;
   border-radius: 15%;
   background-color: #d5f1f5; }
+  .cubo1-index:hover {
+    box-shadow: #02456b -5px 5px, #02456bcb -10px 10px, #02456b84 -15px 15px, #02456b61 -20px 20px, #02456b24 -25px 25px; }
 
 h4 {
   margin-left: 3%; }
 
 .vidkid {
   position: relative;
-  left: 15%;
+  left: 20%;
   max-width: 70%; }
+  .vidkid:hover {
+    box-shadow: 0 5px 15px #02456b; }
 
 p {
   text-align: justify;
@@ -176,11 +198,17 @@ p {
 
 h2 {
   font-family: "Zilla Slab", serif;
-  font-size: 24px;
+  font-size: 28px;
   font-style: oblique;
   font-weight: bolder;
   text-align: left;
-  margin-left: 3%; }
+  margin-left: 15%; }
+
+.text-resolucion {
+  font-weight: bolder;
+  font-size: larger;
+  border: #02456b 2px solid;
+  border-radius: 0%; }
 
 .img-cubo-resolucion {
   width: 70%; }
@@ -193,12 +221,14 @@ h2 {
 main form {
   display: flex;
   justify-content: flex-end; }
+  main form:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
   main form input {
     padding: 0.25%;
     font-size: 13px;
     font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
-    background-color: #c0edf4;
+    background-color: #d7f2f6;
     border: none;
     border-radius: 5%; }
 
@@ -209,12 +239,24 @@ main .img-contacto {
   margin: 5% 0% 10% 20%;
   border-radius: 15%; }
 
-main input, main .input-css-index {
-  background-color: #ceedf198;
+main h3 {
+  font-family: "Zilla Slab", serif;
+  font-size: 20px;
+  font-weight: bolder; }
+
+main input,
+main .input-css-index {
+  background-color: #deeff198;
   width: 100%; }
 
-main h3 {
-  margin: 3%; }
+@media (max-width: 1440px) {
+  header .container-fluid .navbar-collapse {
+    justify-content: center; } }
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    justify-content: flex-end;
+    text-align: right; } }
 
 @media (max-width: 768px) {
   .form-index {
@@ -223,7 +265,7 @@ main h3 {
     padding: 3%;
     border: #02456b 4px double; }
   header .logo {
-    width: 7%; }
+    width: 11%; }
   header .nav-link {
     font-size: 18px; }
   header form input {
@@ -237,8 +279,6 @@ main h3 {
     border: #02456b 4px double; }
   .button-index {
     font-size: 9px; }
-  .form-index {
-    margin-left: 18%; }
   .input-form-index {
     font-size: 14px;
     height: 30px;
@@ -261,7 +301,7 @@ main h3 {
     flex-direction: column;
     align-items: center; }
   .logo {
-    width: 6%; }
+    width: 9%; }
   footer span,
   .btn-primary,
   .card-text {

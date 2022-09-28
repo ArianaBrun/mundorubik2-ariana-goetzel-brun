@@ -14,15 +14,23 @@ main {
     }
 
     .text-envios {
+        margin: 3% 0% 3% 0%;
         padding: 30px;
         @extend %border6px;
         font-family: $roboto;
-        left: 30%;
+        width: 100%;
 
+        &:hover {
+            box-shadow: 0 5px 150px $color-oscuro
+        }
     }
 
     .videorecord {
         max-width: 100%;
+
+        &:hover {
+            box-shadow: 0 5px 15px $color-oscuro
+        }
     }
 
     .input-css-index {
@@ -34,6 +42,16 @@ main {
         padding: 30px;
         display: flex;
         flex-direction: column;
+
+        .index-form-h2 {
+            margin: 0% 0% 6% 0%;
+        }
+
+        .form-check-input {
+            &:hover {
+                border: 0.7mm $color-oscuro solid;
+            }
+        }
     }
 
     .tienda {
@@ -45,11 +63,16 @@ main {
             align-items: center;
             flex-direction: column;
             margin: 4%;
-            margin-left: 30%;
             @extend %border2px;
             padding: 1%;
             border-radius: 15%;
             background-color: $color-medio;
+
+            &:hover {
+                color: $color-medio;
+                box-shadow: 0 5px 15px $color-oscuro;
+                background-color: $color-oscuro;
+            }
         }
 
         .tienda-index {

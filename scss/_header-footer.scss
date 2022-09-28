@@ -11,13 +11,15 @@ header {
     top: 0%;
     z-index: 1;
 
-    .navbar {
-        padding-left: 15%;
-
-    }
-    .container-fluid{
+    .container-fluid {
         justify-content: flex-end !important;
+
+        .navbar-collapse {
+            transition: height 0.7s linear;
+
+        }
     }
+
     .navbar-toggler {
         background-color: $color-medio;
     }
@@ -67,9 +69,7 @@ footer {
     }
 
     img {
-        margin: 1%;
-        width: 40%;
-    }
+        margin: 1%;    }
 
     .medios {
         text-align: center;

@@ -1,3 +1,16 @@
+@media (max-width: 1440px) {
+    header .container-fluid .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        justify-content: flex-end;
+        text-align: right;
+    }
+}
+
 @media (max-width: 768px) {
     .form-index {
         width: 65%;
@@ -9,12 +22,12 @@
     header {
 
         .logo {
-            width: 7%;
+            width: 11%;
         }
 
-    .nav-link {
-        font-size: 18px;
-    }
+        .nav-link {
+            font-size: 18px;
+        }
 
         form input {
             font-size: 10px;
@@ -38,9 +51,6 @@
         font-size: 9px;
     }
 
-    .form-index {
-        margin-left: 18%;
-    }
 
     .input-form-index {
         font-size: 14px;
@@ -79,7 +89,7 @@
     }
 
     .logo {
-        width: 6%;
+        width: 9%;
     }
 
     footer span,
@@ -87,6 +97,7 @@
     .card-text {
         font-size: 14px;
     }
+
     h1,
     .card-title {
         font-size: 16px;
@@ -107,6 +118,7 @@
     .row-index {
         flex-direction: column;
     }
+
     .input-form-index,
     .input-css-index {
         font-size: 14px;

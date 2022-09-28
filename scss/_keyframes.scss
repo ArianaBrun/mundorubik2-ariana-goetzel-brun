@@ -1,11 +1,16 @@
 @keyframes logo {
-    30% 100% {
+    30% {
         transform: rotate(0);
         transform-origin: 100% 100%;
     }
 
     60% {
         transform: rotate(90deg);
+        transform-origin: 100% 100%;
+    }
+
+    100% {
+        transform: rotate(0);
         transform-origin: 100% 100%;
     }
 }

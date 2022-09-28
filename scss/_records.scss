@@ -1,14 +1,19 @@
 .vidkid {
-    position: relative;
-    left: 15%;
-    max-width: 70%;
+  position: relative;
+  left: 20%;
+  max-width: 70%;
+
+  &:hover {
+    box-shadow: 0 5px 15px $color-oscuro
+  }
 }
 
 .text-records {
-  @extend %marg-5
+  @extend %marg-20;
+  @extend %back-text;
 }
 
 p {
-    text-align: justify;
-    margin-left: 3%;
+  text-align: justify;
+  margin-left: 3%;
 }

@@ -1,20 +1,28 @@
 .main-resolucion {
 
-    p,
-    li {
-        @extend %marg-5
+    p {
+        @extend %marg-20;
+        @extend %back-text;
     }
 
     li {
+        @extend %marg-20;
+        @extend %back-text;
         text-decoration: none;
     }
+
 }
 
 h2 {
-    @include title (24px);
-    margin-left: 3%;
+    @include title (28px);
+    margin-left: 15%;
 }
-
+.text-resolucion{
+    font-weight: bolder;
+    font-size: larger;
+    border: $color-oscuro 2px solid;
+    border-radius: 0%;
+}
 .img-cubo-resolucion {
     width: 70%;
 }
