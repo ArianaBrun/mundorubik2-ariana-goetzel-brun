@@ -77,7 +77,8 @@ footer span {
   text-align: center; }
 
 footer img {
-  margin: 1%; }
+  margin: 1%;
+  max-width: 80%; }
 
 footer .medios {
   text-align: center; }
