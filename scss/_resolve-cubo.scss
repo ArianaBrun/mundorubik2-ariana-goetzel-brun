@@ -17,12 +17,14 @@ h2 {
     @include title (28px);
     margin-left: 15%;
 }
-.text-resolucion{
+
+.text-resolucion {
     font-weight: bolder;
     font-size: larger;
     border: $color-oscuro 2px solid;
     border-radius: 0%;
 }
+
 .img-cubo-resolucion {
     width: 70%;
 }
